@@ -18,3 +18,13 @@ if (minutes > 0) {
 // const message = minutes > 0 ? `${hours} г. ${minutes} хв.` : `${hours} г.`;
 
 console.log(message);
+
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+}
+
+Array.toUppercase = function (array) {
+  for (let i = 0; i < array.length; i++) {
+    array[i] = array[i].toUpperCase();
+  }
+};
