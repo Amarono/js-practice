@@ -192,3 +192,68 @@ account.withdraw(100);
 console.log(account.getTransactionTotal(Transaction.WITHDRAW));
 
 console.log(account);
+
+//
+function calculateTotalPrice(orderedItems) {
+  let totalPrice = 0;
+
+  orderedItems.forEach(function (orderedItems) {
+    totalPrice += orderedItems;
+  });
+
+  return totalPrice;
+}
+
+//
+function filterArray(numbers, value) {
+  let newArray = [];
+
+  numbers.forEach(function (number) {
+    if (number > value) {
+      newArray.push(number);
+    }
+  });
+}
+//
+const calculateTotalPrice = orderedItems => {
+  let totalPrice = 0;
+  orderedItems.forEach(item => (totalPrice += item));
+};
+
+//
+const filterArray = (numbers, value) => {
+  const filteredNumbers = [];
+
+  numbers.forEach(number => {
+    if (number > value) {
+      filteredNumbers.push(number);
+    }
+  });
+
+  return filteredNumbers;
+};
+
+//
+
+const changeEven = (numbers, value) => {
+  let newArray = [];
+  numbers.forEach(number => {
+    if (number % 2 === 0) {
+      newArray.push(number + value);
+    } else {
+      newArray.push(number);
+    }
+  });
+};
+
+//
+const planets = ['Earth', 'Mars', 'Venus', 'Jupiter'];
+
+const planetsLengths = planets.map(planet => planet.length);
+return planetsLengths;
+
+const getUserEmails = users => {
+  return users.map(user => user.email);
+};
+
+//
